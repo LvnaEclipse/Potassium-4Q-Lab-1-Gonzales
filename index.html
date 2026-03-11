@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> My First Website</title> 
+
+            <meta charset="UTF-8">
+            <meta name="author" content="zoe"> 
+
+            <link rel="stylesheet" href="style.css" > 
+
+        </head>
+        <body>
+            <form name="checkout-form" action="checkout.html" onsubmit="return validateForm();">
+                <label for="user">Please enter your name:</label>
+                <input type="text" name="user" id="user" required> 
+
+                <br><br>
+                
+
+                <label for="bread">Bread (300 Php):</label>
+                <input type="number" name="bread" id="bread" required min="0" step="1"> 
+
+                <br><br> 
+
+                <label for="milk">Milk (250 Php):</label>
+                <input type="number" name="milk" id="milk" required min="0" step="1"> 
+
+                <br><br> 
+
+                <label for="payment">Payment:</label>
+                <input type="number" name="payment" id="payment" required min="0" step="1"> 
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form> 
+
+            <script src="index.js"></script>
+        </body> 
+
+    </html>
